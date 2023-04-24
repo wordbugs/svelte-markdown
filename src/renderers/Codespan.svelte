@@ -2,4 +2,4 @@
   export let raw
 </script>
 
-<code>{raw.replace(/`/g, '')}</code>
+<code>{raw.replace(/^`+|`+$/g, '')}</code>
